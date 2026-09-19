@@ -12,6 +12,10 @@ public static class FileTransfer
         Environment.CurrentDirectory = RootFolderPath;
         var filesLocation = Path.Combine(RootFolderPath, pathA);
         var fileList = Directory.GetFiles(filesLocation);
+
+        if (!Directory.Exists(pathB))
+            Directory.CreateDirectory(pathB);
+        
         foreach ( var file in fileList )
         {
             var separated = file.Split(FileSeparator);
