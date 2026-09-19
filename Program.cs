@@ -1,3 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using usefulScripts_csharp;
 
-Console.WriteLine("Hello, World!");
+var directoryA = string.Empty;
+var directoryB = string.Empty;
+FileTransfer.FromDirectoryAToDirectoryB(directoryA, directoryB);
