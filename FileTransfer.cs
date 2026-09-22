@@ -11,7 +11,7 @@ public static class FileTransfer
         var currentDirectory = Environment.CurrentDirectory;
         Environment.CurrentDirectory = RootFolderPath;
         var filesLocation = Path.Combine(RootFolderPath, pathA);
-        var fileList = Directory.GetFiles(filesLocation, ".js");
+        var fileList = Directory.GetFiles(filesLocation);
 
         if (!Directory.Exists(pathB))
             Directory.CreateDirectory(pathB);
