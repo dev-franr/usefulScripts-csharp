@@ -6,7 +6,7 @@ const string rpgmmz = "rpgmmz";
 const string mzPlugIns = "js/plugins";
 
 // Edit these when either project changes.
-var currentDev = Path.Combine("rpgmmzPlugin-Quests", "js", "dev");
+var currentDev = Path.Combine("rpgmmzPlugin-Quests", "quests", "dev", "plugins");
 var currentMZProject = Path.Combine("SeptemberProject");
 const string mzTarget = "dev";
 
